@@ -5,179 +5,233 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vishnupriya Jaganathan | QA Engineer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
-body {
-    background: #0a0f2c;
-    color: #fff;
-    overflow-x: hidden;
+body{
+    background:#040b2b;
+    color:white;
+    overflow-x:hidden;
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    padding: 20px 10%;
-    display: flex;
-    justify-content: space-between;
-    background: rgba(0,0,0,0.3);
-    backdrop-filter: blur(10px);
-    z-index: 1000;
+#tsparticles{
+    position:fixed;
+    width:100%;
+    height:100%;
+    z-index:-1;
 }
 
-nav a {
-    color: #00f7ff;
-    text-decoration: none;
-    margin-left: 25px;
-    font-weight: 500;
-    transition: 0.3s;
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    padding:20px 8%;
+    display:flex;
+    justify-content:flex-end;
+    gap:40px;
+    background:rgba(0,0,0,0.2);
+    backdrop-filter:blur(10px);
+    z-index:1000;
 }
 
-nav a:hover {
-    color: white;
+nav a{
+    text-decoration:none;
+    color:#00f7ff;
+    font-weight:500;
+    transition:0.3s;
 }
 
-.section {
-    padding: 120px 10%;
-    min-height: 100vh;
+nav a:hover{
+    color:white;
 }
 
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.container{
+    display:flex;
+    min-height:100vh;
+    padding-top:100px;
 }
 
-.hero-text h1 {
-    font-size: 50px;
-    color: #00f7ff;
+.left{
+    width:40%;
+    padding:50px;
+    text-align:center;
+    border-right:1px solid rgba(0,247,255,0.2);
 }
 
-.hero-text p {
-    margin-top: 15px;
-    font-size: 18px;
-    line-height: 1.6;
+.left img{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    border:4px solid #00f7ff;
+    margin-bottom:30px;
 }
 
-.card {
-    background: rgba(255,255,255,0.05);
-    padding: 25px;
-    border-radius: 15px;
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(0,247,255,0.3);
-    box-shadow: 0 0 20px rgba(0,247,255,0.2);
-    margin-top: 30px;
+.left h1{
+    font-size:32px;
+    color:#00f7ff;
 }
 
-.skills span {
-    display: inline-block;
-    padding: 8px 15px;
-    margin: 6px;
-    border-radius: 30px;
-    background: rgba(0,247,255,0.1);
-    border: 1px solid #00f7ff;
-    font-size: 14px;
+.left p{
+    margin-top:15px;
+    line-height:1.6;
+    color:#ccc;
 }
 
-button {
-    margin-top: 20px;
-    padding: 12px 25px;
-    border: none;
-    background: #00f7ff;
-    color: black;
-    font-weight: bold;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: 0.3s;
+.social{
+    margin-top:30px;
 }
 
-button:hover {
-    background: white;
+.social a{
+    margin:0 10px;
+    color:#00f7ff;
+    font-size:18px;
+    text-decoration:none;
 }
 
-footer {
-    text-align: center;
-    padding: 30px;
-    background: #050816;
-    color: #aaa;
+.right{
+    width:60%;
+    padding:50px;
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    padding:30px;
+    border-radius:15px;
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(0,247,255,0.3);
+    box-shadow:0 0 25px rgba(0,247,255,0.2);
+    margin-bottom:30px;
+}
+
+.card h2{
+    color:#00f7ff;
+    margin-bottom:15px;
+}
+
+.skills span{
+    display:inline-block;
+    padding:8px 14px;
+    margin:5px;
+    border-radius:30px;
+    border:1px solid #00f7ff;
+    background:rgba(0,247,255,0.1);
+    font-size:14px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#020617;
+    color:#aaa;
 }
 </style>
 </head>
 
 <body>
 
+<div id="tsparticles"></div>
+
 <nav>
-    <div><strong>VJ</strong></div>
-    <div>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-    </div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#contact">Contact</a>
 </nav>
 
-<section class="section hero" id="about">
-    <div class="hero-text">
-        <h1>Vishnupriya Jaganathan</h1>
-        <p>
-        Senior QA Engineer with 8+ years of experience in Automation & Manual Testing.
-        Specialized in Selenium WebDriver, Java, Agile methodologies and enterprise application verification.
-        Currently working as Software Verification Engineer in Sweden.
-        </p>
-        <button onclick="window.location.href='#contact'">Contact Me</button>
-    </div>
-</section>
+<div class="container">
 
-<section class="section" id="skills">
-    <h2 style="color:#00f7ff;">Technical Skills</h2>
-    <div class="card skills">
-        <span>Selenium WebDriver</span>
-        <span>Java</span>
-        <span>Python</span>
-        <span>Test Automation</span>
-        <span>Manual Testing</span>
-        <span>Jenkins</span>
-        <span>GitHub</span>
-        <span>Agile</span>
-        <span>SDLC</span>
-        <span>STLC</span>
-    </div>
-</section>
+<div class="left">
+    <!-- Replace with your photo -->
+    <img src="https://via.placeholder.com/200" alt="Profile Photo">
+    <h1>Vishnupriya Jaganathan</h1>
+    <p>Senior QA Engineer | Selenium Automation Specialist | Agile Tester</p>
 
-<section class="section" id="experience">
-    <h2 style="color:#00f7ff;">Work Experience</h2>
-    <div class="card">
-        <h3>Software Verification Engineer</h3>
-        <p>Cochlear | Sweden | Mar 2024 – Present</p>
-        <ul style="margin-top:10px; line-height:1.8;">
-            <li>Develop and maintain automation frameworks using Selenium & Java</li>
-            <li>Perform functional, regression, and system testing</li>
-            <li>Work in Agile Scrum teams</li>
-            <li>Ensure high-quality enterprise-level software delivery</li>
-        </ul>
+    <div class="social">
+        <a href="https://github.com/vishnupriyajaganathan">GitHub</a>
+        <a href="https://www.linkedin.com/in/vishnupriyajagaanathan/">LinkedIn</a>
     </div>
-</section>
+</div>
 
-<section class="section" id="contact">
-    <h2 style="color:#00f7ff;">Contact</h2>
-    <div class="card">
-        <p>Email: your-email@example.com</p>
-        <p>LinkedIn: linkedin.com/in/vishnupriyajagaanathan</p>
-        <p>GitHub: github.com/vishnupriyajaganathan</p>
-    </div>
-</section>
+<div class="right">
+
+<div class="card" id="about">
+<h2>About Me</h2>
+<p>
+Results-driven QA Engineer with 8+ years of experience ensuring high-quality 
+software across web, desktop, mobile, intranet, and enterprise applications. 
+Strong expertise in Selenium WebDriver, Java, SDLC, STLC, and Agile methodologies.
+</p>
+</div>
+
+<div class="card" id="skills">
+<h2>Technical Skills</h2>
+<div class="skills">
+<span>Selenium WebDriver</span>
+<span>Java</span>
+<span>Python</span>
+<span>Automation Framework</span>
+<span>Manual Testing</span>
+<span>Jenkins</span>
+<span>GitHub</span>
+<span>Agile</span>
+<span>SDLC</span>
+<span>STLC</span>
+</div>
+</div>
+
+<div class="card" id="experience">
+<h2>Work Experience</h2>
+<h3>Software Verification Engineer</h3>
+<p>Cochlear | Sweden | Mar 2024 – Present</p>
+<ul style="margin-top:10px; line-height:1.8;">
+<li>Develop and maintain automation frameworks</li>
+<li>Perform regression & system testing</li>
+<li>Collaborate in Agile Scrum teams</li>
+<li>Ensure enterprise-level quality delivery</li>
+</ul>
+</div>
+
+<div class="card" id="contact">
+<h2>Contact</h2>
+<p>Email: your-email@example.com</p>
+<p>Location: Sweden</p>
+</div>
+
+</div>
+</div>
 
 <footer>
-    © 2026 Vishnupriya Jaganathan | QA Automation Engineer
+© 2026 Vishnupriya Jaganathan | QA Automation Engineer
 </footer>
+
+<script>
+tsParticles.load("tsparticles", {
+    particles: {
+        number: { value: 80 },
+        color: { value: "#00f7ff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        move: { enable: true, speed: 1 },
+        links: {
+            enable: true,
+            distance: 150,
+            color: "#00f7ff",
+            opacity: 0.4,
+            width: 1
+        }
+    }
+});
+</script>
 
 </body>
 </html>
